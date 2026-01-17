@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link href="/Assets/Images/TDP.ico" rel="shortcut icon" type="image/x-icon"/>
+    <link href="style.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Toni Di Pane</title>
+  </head>
+  <body>
+    <nav class="navbar">
+        <div class="logo">
+            <img alt="Logo TDP" src="/Assets/Images/Logo Main.png"/>
+        </div>
+        <div class="link">
+        <ul class="nav-links">
+             <li>
+                <a href="index.html">
+                    Accueil
+                </a>
+            </li>
+            <li>
+                <a href="portfolio.html">
+                    Portfolio
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    À propos
+                </a>
+            </li>
+        </ul>
+        <ul class="contact-btn">
+            <li>
+                <a href="#">
+                    contact
+                </a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+  <header>
+    <h1 class="title">
+        Une exploration
+        <img class="strokes" alt="strokes" src="/Assets/Images/traits.png">
+    </h1>
+    <div id="container">
+        <span id="text1">
+        </span>
+        <span id="text2">
+        </span>
+        <svg id="filters">
+            <defs>
+                <filter id="threshold">
+                    <fecolormatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                        0 1 0 0 0
+                        0 0 1 0 0
+                        0 0 0 255 -140">
+                    </fecolormatrix>
+                </filter>
+            </defs>
+        </svg>
+    </div>
+    <div class="LandingPage">
+        <p class="txtlandingpage">
+        Explorez un univers visuel où l'imagination prend vie. Plongez dans l'art du design graphique, où chaque pixel dévoile une histoire unique.
+        </p>
+        <img class="imglandingpage" alt="landingpage" src="/Assets/Images/LandingPage.png">
+    </div>
+
+  </header>
+    <div id="cursor">
+    </div>
+    <script src="program.js">
+    </script>
+  </body>
+</html>
