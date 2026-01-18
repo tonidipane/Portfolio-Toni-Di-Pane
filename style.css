@@ -96,14 +96,15 @@ transition: transform .15s ease-in-out;
 }
 
 ::selection {
-  background-color: #ffcc00;
+  background-color: #ffe600;
   color: #000000;       
 }
 
 .highlight {
-  background-color: #711ff5;
-  color: #ffffff;
-  padding: 0.1em 0.25em;
+  background: linear-gradient(
+    transparent 60%,
+    #ffe600 0%
+  );
 }
 
 .navbar {
@@ -159,7 +160,6 @@ color: #000000;
 
 .nav-links li a:hover {
 color: #000;
-cursor: none;
 }
 
 ul{
@@ -491,7 +491,7 @@ display: block;
 margin: 0;
 width: 3rem;
 height: 3rem;
-background: #282936;
+background: #272727;
 border-radius: 1.625rem;
 }
 button.learn-more .circle .icon {
@@ -500,7 +500,7 @@ position: absolute;
 top: -5px;
 bottom: 0;
 margin: auto;
-background: #fff;
+background: #ffffff;
 }
 button.learn-more .circle .icon.arrow {
 transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
@@ -516,8 +516,8 @@ top: -0.15rem;
 right: 0.0625rem;
 width: 0.625rem;
 height: 0.625rem;
-border-top: 0.125rem solid #fff;
-border-right: 0.125rem solid #fff;
+border-top: 0.125rem solid #ffffff;
+border-right: 0.125rem solid #ffffff;
 transform: rotate(45deg);
 }
 button.learn-more .button-text {
@@ -529,7 +529,7 @@ right: 0;
 bottom: 0;
 padding: 0.75rem 0;
 margin: 0 0 0 1.85rem;
-color: #282936;
+color: #000000;
 font-weight: 700;
 line-height: 1.6;
 text-align: center;
@@ -542,7 +542,7 @@ button:hover .circle .icon.arrow {
 transform: translate(0.5rem, 0);
 }
 button:hover .button-text {
-color: #fff;
+color: #fafafa;
 }
 
 .portfolio {
@@ -571,19 +571,6 @@ margin-top: 6vw;
   .colonne3 {
     display: none;
   }
-
-#cursor {
-z-index: 30;
-position: fixed;
-width: 40px;
-height: 40px;
-background: white;
-border-radius: 50%;
-mix-blend-mode: difference;
-pointer-events: none;
-transition: transform .15s ease-in-out;
-opacity: 0%;
-}
 
 .title {
 font-weight: 800;

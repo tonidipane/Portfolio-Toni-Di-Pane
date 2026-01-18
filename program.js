@@ -205,3 +205,16 @@ function mergeColumns() {
 
 window.addEventListener('load', mergeColumns);
 window.addEventListener('resize', mergeColumns);
+
+
+function hideOnMobileDevice() {
+  const el = document.querySelector('#cursor');
+  const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+  if (isMobile) {
+    el.style.opacity = 0;
+  } else {
+    el.style.opacity = 1;
+  }
+}
+
+window.addEventListener('load', hideOnMobileDevice);
