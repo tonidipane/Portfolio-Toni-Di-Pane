@@ -168,3 +168,40 @@ function rotateToMouse(e) {
         drop-shadow(5px 5px 15px rgba(168, 168, 168, 0.62))
     `;
   }
+
+
+
+function mergeColumns() {
+  const col1 = document.querySelector('.colonne1');
+  const col2 = document.querySelector('.colonne2');
+  const col3 = document.querySelector('.colonne3');
+
+
+  if (window.innerWidth < 810) {
+
+    if (!col1.dataset.fused) {
+
+      const clone = col3.cloneNode(true);
+
+      while (clone.firstChild) {
+        col1.appendChild(clone.firstChild);
+      }
+      col1.dataset.fused = "true";
+    }
+  } else {
+
+    if (col1.dataset.fused) {
+
+      const col1Children = Array.from(col1.children);
+      const col3OriginalLength = document.querySelector('.colonne3').children.length;
+
+      for (let i = col1Children.length - col3OriginalLength; i < col1Children.length; i++) {
+        col1Children[i].remove();
+      }
+      delete col1.dataset.fused;
+    }
+  }
+}
+
+window.addEventListener('load', mergeColumns);
+window.addEventListener('resize', mergeColumns);

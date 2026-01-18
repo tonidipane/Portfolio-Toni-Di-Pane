@@ -187,23 +187,23 @@ cursor: none;
 }
 
 .InnerPadding {
-  padding-left: 6.5vw;
-  padding-right: 6.5vw;
+padding-left: 6.5vw;
+padding-right: 6.5vw;
 }
 
 .title {
-  font-weight: 800;
-  display: flex;
-  align-items: center; 
-  justify-content: center;
-  font-size: min(5vw, 110px);
-  margin-top: 5vw;
+font-weight: 800;
+display: flex;
+align-items: center; 
+justify-content: center;
+font-size: min(5vw, 110px);
+margin-top: 5vw;
 }
 
 .strokes {
-  margin-top: -2.9vw;
-  width: min(4vw, 90px);
-  margin-left: -1.2vw;
+margin-top: -2.9vw;
+width: min(4vw, 90px);
+margin-left: -1.2vw;
 }
 
 #container {
@@ -238,22 +238,22 @@ height: 0px;
 }
 
 .txtlandingpage {
-  margin-left: auto;
-  margin-right: auto;
-  color:#000000;
-  font-size: min(1.4vw, 35px);
-  text-align: center;
-  width: 40vw;
-  max-width: 700px;
-  font-family: 'Larsseit', sans-serif;
-  font-weight: 300;
+margin-left: auto;
+margin-right: auto;
+color:#000000;
+font-size: min(1.4vw, 35px);
+text-align: center;
+width: 40vw;
+max-width: 700px;
+font-family: 'Larsseit', sans-serif;
+font-weight: 300;
 }
 
 .imglandingpage {
-  display: block;
-  width: 87vw;
-  max-width: 1700px;
-  margin: -6vw auto 0;
+display: block;
+width: 87vw;
+max-width: 1700px;
+margin: -6vw auto 0;
 }
 
 @keyframes slide {
@@ -308,118 +308,122 @@ margin-top: 17vw;
 display: flex;
 }
 
+.colonnes > div {
+  flex: 1;
+}
+
 .colonne1 {
-  width: 29vw;
+width: 29vw;
 }
 
 .SmallTitle {
-  font-weight: 600;
-  font-size: min(3.2vw, 80px)
+font-weight: 600;
+font-size: min(3.2vw, 80px)
 }
 
 .UiUxDesign {
-  font-size: 1.4vw;
-  margin-top: 20px;
-  font-weight: 300;
-  color: #4e4e4e;
-  max-width: 27vw;
+font-size: 1.4vw;
+margin-top: 20px;
+font-weight: 300;
+color: #4e4e4e;
+max-width: 27vw;
 }
 
 .fleche1 {
-  margin-left: 16vw;
-  height: 9vw;
-  transform: rotate(15deg)
+margin-left: 16vw;
+height: 9vw;
+transform: rotate(15deg)
 }
 
 .SmallTitle2 {
-  margin-top: 50vw;
-  font-weight: 600;
-  font-size: min(3.2vw, 80px);
+margin-top: 50vw;
+font-weight: 600;
+font-size: min(3.2vw, 80px);
 }
 
 .NoCode {
-  font-size: 1.4vw;
-  margin-top: 20px;
-  font-weight: 300;
-  color: #4e4e4e;
-  max-width: 27vw;
+font-size: 1.4vw;
+margin-top: 20px;
+font-weight: 300;
+color: #4e4e4e;
+max-width: 27vw;
 }
 
 .fleche3 {
-  margin-top: 5vw;
-  margin-left: 13vw;
-  height: 5vw;
-  transform: rotate(20deg)
+margin-top: 5vw;
+margin-left: 13vw;
+height: 5vw;
+transform: rotate(20deg)
 }
 
 .colonne2 {
-  width: 29vw;
-  text-align: center;
-  position: relative; 
+width: 29vw;
+text-align: center;
+position: relative; 
 }
 
 .colonne2 img {
-  top: 27vh;
-  position: sticky;
-  width: 21vw;
-  max-width: 390px;
-  filter: drop-shadow(10px 10px 20px rgba(153, 153, 153, 0.562));
+top: 27vh;
+position: sticky;
+width: 21vw;
+max-width: 390px;
+filter: drop-shadow(10px 10px 20px rgba(153, 153, 153, 0.562));
 }
 
 .colonne3 {
-  width: 29vw;
+width: 29vw;
   
 }
 
 .SmallTitle3 {
-  margin-top: 37vw;
-  font-weight: 600;
-  font-size: min(3.2vw, 80px);
-  margin-left: 4vw;
+margin-top: 37vw;
+font-weight: 600;
+font-size: min(3.2vw, 80px);
+margin-left: 4vw;
 }
 
 .Graphique {
-  font-size: 1.4vw;
-  margin-top: 20px;
-  font-weight: 300;
-  color: #4e4e4e;
-  max-width: 27vw;
-  margin-left: 4vw;
+font-size: 1.4vw;
+margin-top: 20px;
+font-weight: 300;
+color: #4e4e4e;
+max-width: 27vw;
+margin-left: 4vw;
 }
 
 .fleche2 {
-  margin-left: 2vw;
-  margin-top: 3vw;
-  height: 6vw;
+margin-left: 2vw;
+margin-top: 3vw;
+height: 6vw;
 }
 
 .presentation {
-  font-weight: 600;
-  display: flex;
-  align-items: center; 
-  justify-content: center;
-  font-size: min(4.5vw, 90px);
-  margin-top: 8vw;
+font-weight: 600;
+display: flex;
+align-items: center; 
+justify-content: center;
+font-size: min(4.5vw, 90px);
+margin-top: 8vw;
 }
 
 .presentation2 {
-  font-weight: 600;
-  display: flex;
-  align-items: center; 
-  justify-content: center;
-  font-size: min(4.5vw, 90px);
-  margin-top: min(1vw, 10px);
-  color: #711FF5;
+font-weight: 600;
+display: flex;
+align-items: center; 
+justify-content: center;
+font-size: min(4.5vw, 90px);
+margin-top: min(1vw, 10px);
+color: #711FF5;
 }
 
 .subtitle {
-  margin: auto;
-  text-align: center;
-  margin-top: 2vw;
-  font-size: 1.3vw;
-  font-weight: 300;
-  color: #4e4e4e;
-  max-width: 40vw;
+margin: auto;
+text-align: center;
+margin-top: 2vw;
+font-size: 1.3vw;
+font-weight: 300;
+color: #4e4e4e;
+max-width: 40vw;
 }
 
 #cardDiv{
@@ -434,21 +438,21 @@ margin: 3vw auto;
 }
 
 .imageCard {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80vw;
-  max-width: 1100px;
-  height: auto;
-  filter: drop-shadow(10px 10px 50px rgba(153, 153, 153, 0.418));
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 80vw;
+max-width: 1100px;
+height: auto;
+filter: drop-shadow(10px 10px 50px rgba(153, 153, 153, 0.418));
 }
 
 #card2 {
-  transform: translate(-50%, -50%) translateZ(3em);
-  z-index: 10;
-  transform-style: preserve-3d;
-  transition: 0.3s ease;
+transform: translate(-50%, -50%) translateZ(3em);
+z-index: 10;
+transform-style: preserve-3d;
+transition: 0.3s ease;
 }
 
 #btnContainer {
@@ -543,10 +547,96 @@ color: #fff;
 }
 
 .portfolio {
-  font-weight: 600;
-  display: flex;
-  align-items: center; 
-  justify-content: center;
-  font-size: min(4.5vw, 90px);
-  margin-top: 5vw;
+font-weight: 600;
+display: flex;
+align-items: center; 
+justify-content: center;
+font-size: min(4.5vw, 90px);
+margin-top: 5vw;
+}
+
+
+
+
+@media (max-width: 810px) {
+  .colonnes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .colonne1, .colonne2 {
+    flex: 1 1 50%;
+  }
+
+  .colonne3 {
+    display: none;
+  }
+
+.UiUxDesign {
+font-size: 1.4vw;
+margin-top: 20px;
+font-weight: 300;
+color: #4e4e4e;
+max-width: 57vw;
+}
+
+.fleche1 {
+margin-left: 28vw;
+height: 9vw;
+transform: rotate(15deg)
+}
+
+.SmallTitle2 {
+margin-top: 5vw;
+font-weight: 600;
+font-size: min(3.2vw, 80px);
+}
+
+.NoCode {
+font-size: 1.4vw;
+margin-top: 20px;
+font-weight: 300;
+color: #4e4e4e;
+max-width: 57vw;
+}
+
+.fleche3 {
+margin-top: 5vw;
+margin-left: 24vw;
+height: 5vw;
+transform: rotate(20deg)
+}
+
+.SmallTitle3 {
+margin-top: 5vw;
+font-weight: 600;
+font-size: min(3.2vw, 80px);
+margin-left: -1vw;
+}
+
+.colonne2 img {
+top: 34vh;
+position: sticky;
+width: 27vw;
+max-width: 390px;
+filter: drop-shadow(10px 10px 20px rgba(153, 153, 153, 0.562));
+}
+
+.Graphique {
+font-size: 1.4vw;
+margin-top: 20px;
+font-weight: 300;
+color: #4e4e4e;
+max-width: 57vw;
+margin-left: -1vw;
+}
+
+.fleche2 {
+transform: rotate(185deg);
+margin-left: 23vw;
+margin-top: 3vw;
+height: 6vw;
+}
+
 }
