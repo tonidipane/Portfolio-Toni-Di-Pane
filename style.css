@@ -96,15 +96,16 @@ transition: transform .15s ease-in-out;
 }
 
 .navbar {
+background-color: #fafafa;
 margin-right: 20px;
 margin-left: 20px;
-margin-top: 20px;
+top: 0px;
 z-index: 10;
 position: sticky;
 display: flex;
-justify-content: space-between;
 align-items: center;
-padding: 20px;
+padding: 40px 20px 20px 20px;
+height: 93px;
 }
 
 .logo{
@@ -119,12 +120,14 @@ width: 70px;
 
 .link {
 font-family: 'Larsseit', sans-serif;
+font-weight: 300;
 display: flex;
 position: absolute;
 right: 0;
 }
 
 .nav-links {
+padding-left: 15px;
 justify-content: right;
 position: relative;
 list-style: none;
@@ -132,11 +135,15 @@ display: flex;
 gap: 15px;
 }
 
-
 .nav-links li a {
 text-decoration: none;
-color: #878787;
+color: #929292;
 transition: color 0.3s ease;
+}
+
+.accueil li a {
+text-decoration: none;
+color: #000000;
 }
 
 .nav-links li a:hover {
@@ -155,7 +162,7 @@ list-style: none;
 .contact-btn li a {
 margin-right: 20px;
 padding: 10px 20px;
-border: 2px solid #711ff5;
+border: 1px solid #711ff5;
 border-radius: 50px;
 text-decoration: none;
 color: #711ff5;
@@ -168,12 +175,18 @@ color: #fff;
 cursor: none;
 }
 
+.InnerPadding {
+  padding-left: 6.5vw;
+  padding-right: 6.5vw;
+}
+
 .title {
+  font-weight: 800;
   display: flex;
   align-items: center; 
   justify-content: center;
-  font-size: 6vw;
-  margin-top: 10vw;
+  font-size: 5vw;
+  margin-top: 5vw;
 }
 
 .strokes {
@@ -200,8 +213,8 @@ position: absolute;
 max-width: 1100%200px;
 display: inline-block;
 font-family: 'Larsseit', sans-serif;
-font-weight: 600;
-font-size: 7vw;
+font-weight: 800;
+font-size: 6vw;
 text-align: center;
 user-select: none;
 
@@ -213,21 +226,152 @@ width: 0px;
 height: 0px;
 }
 
-
 .txtlandingpage {
   margin-left: auto;
   margin-right: auto;
-  color:#7e7e7e;
-  font-size: 2vw;
+  color:#000000;
+  font-size: 1.4vw;
   text-align: center;
   width: 40vw;
   font-family: 'Larsseit', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .imglandingpage {
-  width: 90vw;
-  margin-top: -8vw;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  width: 87vw;
+  margin-top: -6vw;
+
+}
+
+@keyframes slide {
+from{
+transform: translateX(0);
+}
+to{
+transform: translateX(-100%);
+}
+}
+
+.logos{
+overflow: hidden;
+padding-top: 7vw;
+white-space: nowrap;
+position: relative;
+}
+
+.logos:before,
+.logos:after {
+position: absolute;
+top: 0;
+width: 300px;
+height: 100%;
+content: " ";
+z-index: 2;
+}
+
+.logos:before {
+left: 0;
+background: linear-gradient(to left,rgba(250,250,250,0),#fafafa);
+}
+
+.logos:after {
+right: 0;
+background: linear-gradient(to right,rgba(250,250,250,0),#fafafa);
+}
+
+.logos-slide{
+display: inline-block;
+animation: 16.8s slide infinite linear;
+}
+
+.logos-slide img{
+margin: 0px 25px;
+height: 34px;
+}
+
+
+.colonnes {
+margin-top: 17vw;
+display: flex;
+}
+
+.colonne1 {
+  padding-right: 2vw;
+  width: 29vw;
+}
+
+.SmallTitle {
+  font-weight: 600;
+  font-size: 42px;
+}
+
+.UiUxDesign {
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: 300;
+  color: #4e4e4e;
+}
+
+.fleche1 {
+  margin-left: 17vw;
+  margin-top: 20px;
+  height: 130px;
+  transform: rotate(15deg)
+}
+
+.SmallTitle2 {
+  margin-top: 560px;
+  font-weight: 600;
+  font-size: 42px;
+}
+
+.NoCode {
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: 300;
+  color: #4e4e4e;
+}
+
+.fleche3 {
+  margin-top: 45px;
+  margin-left: 14vw;
+  height: 70px;
+  transform: rotate(20deg)
+}
+
+.colonne2 {
+  width: 29vw;
+  display: flex;
+}
+
+.colonne2 img {
+  top: 30%;
+  position: sticky;
+  width: 18vw;
+  height: 37.5vw;
+  margin-left: auto;
+  margin-right: auto;
+  filter: drop-shadow(10px 10px 20px rgb(139, 139, 139));
+}
+
+.colonne3 {
+  width: 29vw;
+}
+
+.SmallTitle3 {
+  margin-top: 475px;
+  font-weight: 600;
+  font-size: 42px;
+}
+
+.Grapique {
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: 300;
+  color: #4e4e4e;
+}
+
+.fleche2 {
+  margin-top: 50px;
+  height: 90px;
 }
