@@ -1,0 +1,639 @@
+@font-face {
+  font-family: 'Larsseit';
+  src: url('../assets/fonts/Larsseit/Larsseit-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Larsseit';
+  src: url('../assets/fonts/Larsseit/Larsseit-Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Larsseit';
+  src: url('../assets/fonts/Larsseit/Larsseit-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Larsseit';
+  src: url('../assets/fonts/Larsseit/Larsseit-LightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Larsseit';
+  src: url('../assets/fonts/Larsseit/Larsseit-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Larsseit';
+  src: url('../assets/fonts/Larsseit/Larsseit-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Larsseit';
+  src: url('../assets/fonts/Larsseit/Larsseit-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Larsseit';
+  src: url('../assets/fonts/Larsesit/Larsseit-BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Larsseit';
+  src: url('../assets/fonts/Larsseit/Larsseit-ExtraBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Larsseit';
+  src: url('../assets/fonts/Larsseit/Larsseit-ExtraBoldItalic.otf') format('opentype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+
+* {
+cursor: none ;
+margin: 0;
+box-sizing: border-box;
+}
+
+html body {
+  overflow-x: hidden;
+}
+
+body {
+font-family: 'Larsseit', sans-serif;
+font-weight: 400;
+background-color: #fafafa;
+margin: 0px;
+}
+
+#cursor {
+z-index: 30;
+position: fixed;
+width: 40px;
+height: 40px;
+background: white;
+border-radius: 50%;
+mix-blend-mode: difference;
+pointer-events: none;
+transition: transform .15s ease-in-out;
+}
+
+::selection {
+  background-color: #ffe600;
+  color: #000000;       
+}
+
+.highlight {
+  background: linear-gradient(
+    transparent 60%,
+    #ffe600 0%
+  );
+}
+
+.navbar {
+background-color: #fafafa;
+margin-right: 20px;
+margin-left: 20px;
+top: 0px;
+z-index: 10;
+position: sticky;
+display: flex;
+align-items: center;
+padding: 20px 20px 20px 20px;
+height: 80px;
+}
+
+.menu {
+font-family: 'Larsseit', sans-serif;
+font-weight: 300;
+display: flex;
+position: absolute;
+right: 0;
+align-items: center;
+}
+
+.logo{
+margin-top: 2px;
+}
+
+.logo img {
+position: relative;
+width: 70px;
+}
+
+.link {
+font-family: 'Larsseit', sans-serif;
+font-weight: 300;
+display: flex;
+position: absolute;
+right: 0;
+}
+
+.nav-links {
+padding-left: 15px;
+justify-content: right;
+position: relative;
+list-style: none;
+display: flex;
+gap: 15px;
+}
+
+.nav-links li a {
+text-decoration: none;
+color: #929292;
+transition: color 0.3s ease;
+}
+
+.accueil li a {
+text-decoration: none;
+color: #929292;
+}
+
+.nav-links li a:hover {
+color: #000;
+}
+
+ul{
+list-style: none;
+}
+
+.contact-btn {
+  padding-left: 15px;
+}
+
+.contact-btn li a {
+margin-right: 20px;
+padding: 12px 20px 10px 20px;
+border: 1px solid #711ff5;
+background-color: #711ff5;
+border-radius: 50px;
+text-decoration: none;
+color: #ffffff;
+}
+
+
+
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: none;
+  position: absolute;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+.burger span {
+  display: block;
+  height: 2px;
+  width: 24px;
+  background: #000;
+  margin: 6px auto;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.InnerPadding {
+padding-left: 6.5vw;
+padding-right: 6.5vw;
+}
+
+.title {
+    text-align: center;
+    margin-top: 5vw;
+    font-weight: 700;
+    font-size: min(5vw, 90px);
+}
+
+.title2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: min(5vw, 90px);
+}
+
+
+.subtitle {
+margin: auto;
+text-align: center;
+margin-top: 2vw;
+font-size: 1.3vw;
+font-weight: 300;
+color: #4e4e4e;
+max-width: 40vw;
+}
+
+
+#cardDiv{
+height: 50vw;
+width: 87vw;
+max-width: 1200px;
+max-height: 800px;
+position: relative;
+transform-style: preserve-3d;
+transition: 0.3s ease;
+margin: 3vw auto;
+}
+
+.imageCard {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 80vw;
+max-width: 1100px;
+height: auto;
+filter: drop-shadow(10px 10px 50px rgba(153, 153, 153, 0.418));
+}
+
+#card2 {
+transform: translate(-50%, -50%) translateZ(3em);
+z-index: 10;
+transform-style: preserve-3d;
+transition: 0.3s ease;
+}
+
+.projettitle {
+    text-align: center;
+    font-weight: 700;
+    font-size: min(5vw, 90px);
+    color: #711ff5;
+    margin-bottom: 9vw;
+}
+
+.projet {
+border-radius: 25px;
+filter: drop-shadow(10px 10px 50px rgba(153, 153, 153, 0.082));
+margin: auto auto;
+width: 860px;
+height: 425px;
+background-color: #ffffff;
+}
+
+.contact-section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 22px 20px 0px 20px;
+}
+
+.contact-form{
+  width: 100%;
+  max-width: 820px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-form .row{
+  display: flex;
+  gap: 18px;
+}
+
+.contact-form input,
+.contact-form textarea{
+  font-family: 'Larsseit', sans-serif;
+  font-weight: 400;
+  width: 100%;
+  background: #f2f2f2;
+  border: none;
+  border-radius: 10px;
+  padding: 16px 18px;
+  font-size: 16px;
+  outline: none;
+  color: #000;
+}
+
+.contact-form textarea{
+  min-height: 240px;
+  resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+  outline: 2px solid rgba(0,0,0,0.15);
+}
+
+.contact-form button{
+  font-family: 'Larsseit', sans-serif;
+  font-weight: 400;
+  width: 100%;
+  padding: 18px 20px;
+  border: none;
+  border-radius: 12px;
+  background: #1c1c1c;
+  color: white;
+  font-size: 16px;
+
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.contact-form button:hover{
+  background: #000;
+  transform: translateY(-1px);
+}
+
+.form-status{
+  font-size: 14px;
+  margin-top: 5px;
+  color: #000;
+}
+
+.stroke {
+background-color: #838383;
+height: 1px;
+margin: 5vw auto;
+width: 80vw;
+}
+
+.footer {
+margin-top: 7vw;
+margin-left: auto;
+margin-right: auto;
+width: 70vw;
+display: flex;
+gap: 10vw;
+margin-bottom: 7vw;
+}
+
+.footer1 {
+width: 10vw;
+}
+
+.logofooter {
+width: 5vw;
+}
+
+.footer2 {
+  width: 50vw;
+  display: flex;
+  gap: 6vw;
+}
+
+.projets {
+  width: 16.3vw;
+}
+
+.more {
+  width: 16.3vw;
+}
+
+.reseaux {
+  width: 16.3vw;
+}
+
+.FooterTitle {
+  font-weight: 500;
+  font-size: 1.5vw;
+  margin-bottom: 1.4vw;
+}
+
+.footerlink {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Larsseit', sans-serif;
+  font-weight: 300;
+  padding: 0;
+}
+
+.footerlink li a {
+  font-size: 1vw;
+  text-decoration: none;
+  list-style: none;
+  color: #000;
+  transition: color 0.2s ease;
+}
+
+.footerlink li a:hover {
+  color: #711FF5;
+}
+
+.footerlink li {
+  font-size: 1vw;
+  color: #000;
+}
+
+.reseauximg {
+  padding: 0px;
+  margin-top: 1vw;
+  display: flex;
+}
+
+.reseauximg li a img{
+  margin-right: .7vw;
+  width: 1.4vw;
+}
+
+.tiktok{
+  width: 1.3vw !important;
+}
+
+
+@media (max-width:810px) {
+    
+.menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background: #fafafa;
+    padding: 50px 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid rgba(0,0,0,0.06);
+  }
+
+
+  .burger {
+    display: block;
+  }
+
+  .menu.open {
+    display: flex;
+    text-align: center;
+  }
+
+
+  .accueil, .nav-links, .contact-btn {
+    font-size: 4vw;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  .contact-btn li a {
+  background-color: #fafafa;
+  border: 0px solid #fafafa;
+  text-decoration: none;
+  color: #929292;
+  transition: background-color 0.45s ease;
+  }
+
+  .contact-btn li a {
+    margin-right: 0;
+  }
+
+  .contact-btn li a:hover {
+    text-decoration: none;
+    color: #000000;
+    background-color: #fafafa;
+  }
+
+  .nav-links {
+    justify-content: flex-start;
+    gap: 28px;
+  }
+
+
+.title {
+    text-align: center;
+    margin-top: 10vw;
+    font-weight: 700;
+    font-size: 8vw;
+}
+
+.title2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 8vw;
+}
+
+.projet {
+gap: 2vw;
+border-radius: 25px;
+filter: drop-shadow(10px 10px 50px rgba(153, 153, 153, 0.082));
+margin: auto auto;
+width: min(80vw, 1500px);
+height: 425px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+background-color: #ffffff;
+}
+
+.subtitle {
+margin: auto;
+text-align: center;
+margin-top: 7vw;
+font-size: 3vw;
+font-weight: 300;
+color: #4e4e4e;
+max-width: 70vw;
+}
+
+.footer {
+  margin-top: 7vw;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70vw;
+  display: flex;
+  gap: 10vw;
+}
+
+.footer1 {
+  width: 10vw;
+  display: flex;
+  align-items: center;
+}
+
+.logofooter {
+  width: 20vw;
+}
+
+.footer2 {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  gap: 6vw;
+  margin-left: 10vw;
+}
+
+.projets {
+  width: 40vw;
+}
+
+.more {
+  width: 40vw;
+}
+
+.reseaux {
+  width: 40vw;
+}
+
+.FooterTitle {
+  font-weight: 500;
+  font-size: 6vw;
+  margin-bottom: 5vw;
+}
+
+.footerlink {
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Larsseit', sans-serif;
+  font-weight: 300;
+  padding: 0;
+}
+
+.footerlink li a {
+  font-size: 3vw;
+  text-decoration: none;
+  list-style: none;
+  color: #000;
+  transition: color 0.2s ease;
+}
+
+.footerlink li a:hover {
+  color: #711FF5;
+}
+
+.footerlink li {
+  font-size: 3vw;
+  color: #000;
+}
+
+.reseauximg {
+  padding: 0px;
+  margin-top: 1vw;
+  display: flex;
+}
+
+.reseauximg li a img{
+  margin-right: 4vw;
+  width: 5vw;
+}
+
+.tiktok{
+  width: 4.5vw !important;
+}
+
+
+}

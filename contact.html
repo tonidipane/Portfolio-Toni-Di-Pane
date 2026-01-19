@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link href="contact.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Toni Di Pane</title>
+    <link href="Assets/Images/TDP.ico?" rel="shortcut icon" type="image/x-icon"/>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img alt="Logo TDP" src="Assets/Images/Logo Main.png"/>
+        </div>
+        <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="menu">
+    <ul class="accueil">
+      <li>
+        <a href="index.html">Accueil</a>
+      </li>
+    </ul>
+
+    <ul class="nav-links">
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="#">À propos</a></li>
+    </ul>
+
+    <ul class="contact-btn">
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+    <div class="InnerPadding">
+        <h1 class="title">Rejoignez moi sur mes</h1>
+        <h1 class="title2"><span class="highlight">Reseaux sociaux</span></h1>
+        <p class="subtitle">N'hésitez pas à me contacter pour discuter de vos projets
+                            créatifs. Que vous ayez une question, une idée ou que vous
+                            souhaitiez simplement échanger sur une collaboration
+                            potentielle, je suis là pour vous aider. Envoyez-moi un
+                            message et je vous répondrai dans les plus brefs délais.</p>
+        <div id="cardDiv">
+            <img class="imageCard" id="card" src="Assets/Images/Card1.png"/>
+            <img class="imageCard" id="card2" src="Assets/Images/Card2.png"/>
+        </div>
+        <h1 class="projettitle">Envoyer moi un Mail !</h1>
+        <div class="projet">
+        <section class="contact-section">
+            <form class="contact-form" action="https://formspree.io/f/mwvvbaew" method="POST">
+                <div class="row">
+                    <input type="text" name="name" placeholder="Nom" required>
+                    <input type="email" name="email" placeholder="Adresse e-mail" required>
+                </div>
+                <textarea name="message" placeholder="Votre message" required></textarea>
+                <input type="hidden" name="_subject" value="Nouveau message - Portfolio Toni Di Pane">
+                <button type="submit">Envoyer mon message</button>
+                <p class="form-status" aria-live="polite"></p>
+            </form>
+        </section>
+        </div>
+    </div>
+        <footer>
+        <div class="stroke"></div>
+        <div class="footer">
+            <div class="footer1">
+                <img class="logofooter" src="Assets/Images/Logo Main.png">
+            </div>
+            <div class="footer2">
+                <div class="projets">
+                    <h2 class="FooterTitle">Projets</h2>
+                    <ul class="footerlink">
+                        <li>
+                            <a href="#">
+                                1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                3
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                4
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="more">
+                    <h2 class="FooterTitle">A propos</h2>
+                    <ul class="footerlink">
+                        <li>
+                            <a href="#">
+                                Mentions légales
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Politique de confidentialité
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                Me contacter
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="reseaux">
+                    <h2 class="FooterTitle">Mes réseaux
+                    </h2>
+                    <ul class="footerlink">
+                        <li>
+                            Explorez d'avantage avec mes médias sociaux !
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ul class="reseauximg">
+                                    <li>
+                                        <a href="#">
+                                            <img src="Assets/Images/insta.png">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="Assets/Images/linkedin.png">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img class="tiktok" src="Assets/Images/tiktok.png">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div id="cursor">
+    </div>
+    <script type="module">
+    import Lenis from 'https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.mjs'
+
+    console.log('Lenis =', Lenis)
+
+    const lenis = new Lenis()
+
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+    </script>
+    <script src="contact.js" defer></script>
+</body>
+</html>

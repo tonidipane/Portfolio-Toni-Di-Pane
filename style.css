@@ -606,7 +606,7 @@ border-radius: 2vw;
 filter: drop-shadow(10px 10px 50px rgba(153, 153, 153, 0.082));
 margin: 8vw auto;
 width: 80vw;
-height: 37vw;
+height: 34vw;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -775,7 +775,7 @@ width: 5vw;
   }
 
   .contact-btn li a {
-  border: 0px solid #711ff5;
+  border: 0px solid #fafafa;
   text-decoration: none;
   color: #929292;
   transition: background-color 0.45s ease;
@@ -785,6 +785,11 @@ width: 5vw;
     margin-right: 0;
   }
 
+  .contact-btn li a:hover {
+    text-decoration: none;
+    color: #000000;
+    background-color: #fafafa;
+  }
 
   .nav-links {
     justify-content: flex-start;

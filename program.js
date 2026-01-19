@@ -21,16 +21,8 @@
   })
 
 
-  document.addEventListener("DOMContentLoaded", function () {
-    const burger = document.getElementById('burger');
-    const mobileMenu = document.getElementById('mobileMenu');
 
-    burger.addEventListener('click', () => {
-      mobileMenu.classList.toggle('active');
-      burger.classList.toggle('toggle');
-    });
-  });
-
+  
 console.log(document.getElementById("text1"))
 
 const elts = {
@@ -120,54 +112,54 @@ function animate() {
 animate();
 
 
-const cardDiv = document.getElementById('cardDiv');
-const imgCard = document.getElementById('card2');
+if (!isTouchDevice) {
+  const cardDiv = document.getElementById('cardDiv');
+  const imgCard = document.getElementById('card2');
 
+  if (cardDiv && imgCard) {
+    let bounds;
 
+    cardDiv.addEventListener('mouseenter', (e) => {
+      bounds = cardDiv.getBoundingClientRect();
+      rotateToMouse(e);
+      document.addEventListener('mousemove', rotateToMouse);
+    });
 
-cardDiv.addEventListener('mouseenter', (e) => {
-    bounds = cardDiv.getBoundingClientRect();
-    rotateToMouse(e)
-    document.addEventListener('mousemove', rotateToMouse);
-});
-  
-cardDiv.addEventListener('mouseleave', () => {
-    document.removeEventListener('mousemove', rotateToMouse);
-    cardDiv.style.transform = '';
-    cardDiv.style.background = '';
-    imgCard.style.filter = `
-        drop-shadow(5px 5px 20px rgba(168, 168, 168, 0))
-    `;
-});
+    cardDiv.addEventListener('mouseleave', () => {
+      document.removeEventListener('mousemove', rotateToMouse);
+      cardDiv.style.transform = '';
+      cardDiv.style.background = '';
+      imgCard.style.filter = 'drop-shadow(5px 5px 20px rgba(168, 168, 168, 0))';
+    });
 
+    function rotateToMouse(e) {
+      const mouseX = e.clientX;
+      const mouseY = e.clientY;
+      const leftX = mouseX - bounds.x;
+      const topY = mouseY - bounds.y;
 
+      const center = {
+        x: leftX - bounds.width / 2,
+        y: topY - bounds.height / 2
+      };
 
-function rotateToMouse(e) {
-    const mouseX = e.clientX;
-    const mouseY = e.clientY;
-    const leftX = mouseX - bounds.x;
-    const topY = mouseY - bounds.y;
-    const center = {
-      x: leftX - bounds.width / 2,
-      y: topY - bounds.height / 2
-    }
-    const distance = Math.sqrt(center.x**2 + center.y**2);
+      const distance = Math.sqrt(center.x ** 2 + center.y ** 2);
 
-    cardDiv.style.transform = `
+      cardDiv.style.transform = `
         perspective(60em)
         scale3d(1.07, 1.07, 1.07)
         rotate3d(
-            ${center.y / 100},
-            ${-center.x / 100},
-            0,
-            ${Math.log(distance)* 2}deg
+          ${center.y / 100},
+          ${-center.x / 100},
+          0,
+          ${Math.log(distance) * 2}deg
         )
-    `
+      `;
 
-    imgCard.style.filter = `
-        drop-shadow(5px 5px 15px rgba(168, 168, 168, 0.62))
-    `;
+      imgCard.style.filter = 'drop-shadow(5px 5px 15px rgba(168, 168, 168, 0.62))';
+    }
   }
+}
 
 
 
