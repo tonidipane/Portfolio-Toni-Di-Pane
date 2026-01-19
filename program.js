@@ -112,6 +112,8 @@ function animate() {
 animate();
 
 
+const isTouchDevice = ("ontouchstart" in window) || (navigator.maxTouchPoints > 0);
+
 if (!isTouchDevice) {
   const cardDiv = document.getElementById('cardDiv');
   const imgCard = document.getElementById('card2');

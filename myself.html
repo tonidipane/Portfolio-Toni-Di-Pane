@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link href="Assets/Images/TDP.ico?" rel="shortcut icon" type="image/x-icon"/>
+    <link href="myself.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Toni Di Pane</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img alt="Logo TDP" src="Assets/Images/Logo Main.png"/>
+        </div>
+        <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="menu">
+    <ul class="accueil">
+      <li>
+        <a href="index.html">Accueil</span></a>
+      </li>
+    </ul>
+    <ul class="nav-links">
+      <li><a href="portfolio.html">Portfolio</a></li>
+      
+    </ul>
+    <ul class="myself">
+        <li><a href="myself.html"><span class="highlight">À propos</span></a></li>
+    </ul>
+    <ul class="contact-btn">
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="InnerPadding">
+
+
+
+<div id="cursor">
+    </div>
+    <script type="module">
+    import Lenis from 'https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.mjs'
+
+    console.log('Lenis =', Lenis)
+
+    const lenis = new Lenis()
+
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+    </script>
+    <script src="myself.js">
+    </script>
+</div>
+</body>
+</html>

@@ -977,7 +977,7 @@ margin-top: 7vw;
 .projet {
   gap: 2vw;
   padding-top: 4vw;
-  border-radius: 2vw;
+  border-radius: 10vw;
   filter: drop-shadow(10px 10px 50px rgba(153, 153, 153, 0.082));
   margin: 8vw auto;
   width: 80vw;

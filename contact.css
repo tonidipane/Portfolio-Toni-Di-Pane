@@ -229,6 +229,7 @@ padding-right: 6.5vw;
     text-align: center;
     font-weight: 700;
     font-size: min(5vw, 90px);
+    color: #711FF5;
 }
 
 
@@ -246,8 +247,8 @@ max-width: 40vw;
 #cardDiv{
 height: 50vw;
 width: 87vw;
-max-width: 1200px;
-max-height: 800px;
+max-width: 1000px;
+max-height: 700px;
 position: relative;
 transform-style: preserve-3d;
 transition: 0.3s ease;
@@ -276,8 +277,8 @@ transition: 0.3s ease;
     text-align: center;
     font-weight: 700;
     font-size: min(5vw, 90px);
-    color: #711ff5;
-    margin-bottom: 9vw;
+    color: #000000;
+    margin-bottom: 7vw;
 }
 
 .projet {
@@ -354,8 +355,8 @@ background-color: #ffffff;
 }
 
 .form-status{
+  text-align: center;
   font-size: 14px;
-  margin-top: 5px;
   color: #000;
 }
 
@@ -488,11 +489,15 @@ width: 5vw;
   }
 
   .contact-btn li a {
-  background-color: #fafafa;
   border: 0px solid #fafafa;
   text-decoration: none;
-  color: #929292;
+  color: #000000;
   transition: background-color 0.45s ease;
+  background: linear-gradient(
+    transparent 60%,
+    #ffe600 0%);
+  border-radius: 0px;
+  padding: 0px;
   }
 
   .contact-btn li a {

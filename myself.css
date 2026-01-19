@@ -1,0 +1,291 @@
+@font-face {
+  font-family: 'Larsseit';
+  src: url('../assets/fonts/Larsseit/Larsseit-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Larsseit';
+  src: url('../assets/fonts/Larsseit/Larsseit-Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Larsseit';
+  src: url('../assets/fonts/Larsseit/Larsseit-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Larsseit';
+  src: url('../assets/fonts/Larsseit/Larsseit-LightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Larsseit';
+  src: url('../assets/fonts/Larsseit/Larsseit-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Larsseit';
+  src: url('../assets/fonts/Larsseit/Larsseit-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Larsseit';
+  src: url('../assets/fonts/Larsseit/Larsseit-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Larsseit';
+  src: url('../assets/fonts/Larsesit/Larsseit-BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Larsseit';
+  src: url('../assets/fonts/Larsseit/Larsseit-ExtraBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Larsseit';
+  src: url('../assets/fonts/Larsseit/Larsseit-ExtraBoldItalic.otf') format('opentype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+
+* {
+cursor: none ;
+margin: 0;
+box-sizing: border-box;
+}
+
+html body {
+  overflow-x: hidden;
+}
+
+body {
+font-family: 'Larsseit', sans-serif;
+font-weight: 400;
+background-color: #fafafa;
+margin: 0px;
+}
+
+#cursor {
+z-index: 30;
+position: fixed;
+width: 40px;
+height: 40px;
+background: white;
+border-radius: 50%;
+mix-blend-mode: difference;
+pointer-events: none;
+transition: transform .15s ease-in-out;
+}
+
+::selection {
+  background-color: #ffe600;
+  color: #000000;       
+}
+
+.highlight {
+  background: linear-gradient(
+    transparent 60%,
+    #ffe600 0%
+  );
+}
+
+.navbar {
+background-color: #fafafa;
+margin-right: 20px;
+margin-left: 20px;
+top: 0px;
+z-index: 10;
+position: sticky;
+display: flex;
+align-items: center;
+padding: 20px 20px 20px 20px;
+height: 80px;
+}
+
+.menu {
+font-family: 'Larsseit', sans-serif;
+font-weight: 300;
+display: flex;
+position: absolute;
+right: 0;
+align-items: center;
+}
+
+.logo{
+margin-top: 2px;
+}
+
+.logo img {
+position: relative;
+width: 70px;
+}
+
+.link {
+font-family: 'Larsseit', sans-serif;
+font-weight: 300;
+display: flex;
+position: absolute;
+right: 0;
+}
+
+.nav-links {
+padding-left: 15px;
+justify-content: right;
+position: relative;
+list-style: none;
+display: flex;
+gap: 15px;
+}
+
+.nav-links li a {
+text-decoration: none;
+color: #929292;
+transition: color 0.3s ease;
+}
+
+.myself {
+    padding-left: 15px;
+}
+
+.myself li a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.accueil li a {
+text-decoration: none;
+color: #929292;
+}
+
+.nav-links li a:hover {
+color: #000;
+}
+
+ul{
+list-style: none;
+}
+
+.contact-btn {
+  padding-left: 15px;
+}
+
+.contact-btn li a {
+margin-right: 20px;
+padding: 12px 20px 10px 20px;
+border: 1px solid #711ff5;
+border-radius: 50px;
+text-decoration: none;
+color: #711ff5;
+transition: background-color 0.45s ease;
+}
+
+.contact-btn li a:hover {
+background-color: #711ff5;
+color: #fff;
+cursor: none;
+}
+
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: none;
+  position: absolute;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+.burger span {
+  display: block;
+  height: 2px;
+  width: 24px;
+  background: #000;
+  margin: 6px auto;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.InnerPadding {
+padding-left: 6.5vw;
+padding-right: 6.5vw;
+}
+
+@media (max-width: 810px) {
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background: #fafafa;
+    padding: 50px 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid rgba(0,0,0,0.06);
+  }
+
+
+  .burger {
+    display: block;
+  }
+
+  .menu.open {
+    display: flex;
+    text-align: center;
+  }
+
+
+  .accueil, .nav-links, .contact-btn, .myself {
+    font-size: 4vw;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  .contact-btn li a {
+  border: 0px solid #fafafa;
+  text-decoration: none;
+  color: #929292;
+  transition: background-color 0.45s ease;
+  }
+
+  .contact-btn li a {
+    margin-right: 0;
+  }
+
+  .contact-btn li a:hover {
+    text-decoration: none;
+    color: #000000;
+    background-color: #fafafa;
+  }
+
+  .nav-links {
+    justify-content: flex-start;
+    gap: 28px;
+  }
+
+}
