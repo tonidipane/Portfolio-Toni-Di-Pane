@@ -691,7 +691,11 @@ width: 80vw;
 
 .reseauximg li a img{
   margin-right: .7vw;
-  width: 2vw;
+  width: 1.4vw;
+}
+
+.tiktok{
+  width: 1.3vw !important;
 }
 
 @media (max-width: 810px) {
@@ -920,5 +924,94 @@ font-weight: 300;
 color: #4e4e4e;
 max-width: 40vw;
 }
+
+.footer {
+  margin-top: 7vw;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70vw;
+  display: flex;
+  gap: 10vw;
+}
+
+.footer1 {
+  width: 10vw;
+  display: flex;
+  align-items: center;
+}
+
+.logofooter {
+  width: 20vw;
+}
+
+.footer2 {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  gap: 6vw;
+  margin-left: 10vw;
+}
+
+.projets {
+  width: 40vw;
+}
+
+.more {
+  width: 40vw;
+}
+
+.reseaux {
+  width: 40vw;
+}
+
+.FooterTitle {
+  font-weight: 500;
+  font-size: 6vw;
+  margin-bottom: 5vw;
+}
+
+.footerlink {
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Larsseit', sans-serif;
+  font-weight: 300;
+  padding: 0;
+}
+
+.footerlink li a {
+  font-size: 3vw;
+  text-decoration: none;
+  list-style: none;
+  color: #000;
+  transition: color 0.2s ease;
+}
+
+.footerlink li a:hover {
+  color: #711FF5;
+}
+
+.footerlink li {
+  font-size: 3vw;
+  color: #000;
+}
+
+.reseauximg {
+  padding: 0px;
+  margin-top: 1vw;
+  display: flex;
+}
+
+.reseauximg li a img{
+  margin-right: 4vw;
+  width: 5vw;
+}
+
+.tiktok{
+  width: 4.5vw !important;
+}
+
 
 }
