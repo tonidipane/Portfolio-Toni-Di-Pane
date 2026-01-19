@@ -218,3 +218,4 @@ function hideOnMobileDevice() {
 }
 
 window.addEventListener('load', hideOnMobileDevice);
+

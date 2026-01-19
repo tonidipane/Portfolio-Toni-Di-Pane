@@ -163,10 +163,31 @@
     Parcourez ma galerie et voyez comment
     je transforme des idées en réalisations
     visuelles concrètes./p>
-  </div>
+    </div>
+    <img class="Ui" src="Assets/Images/Ui.png">
+
+
+
+
+
     <div id="cursor">
     </div>
+    <script type="module">
+    import Lenis from 'https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.mjs'
+
+    console.log('Lenis =', Lenis)
+
+    const lenis = new Lenis()
+
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+    </script>
     <script src="program.js">
     </script>
+
   </body>
 </html>

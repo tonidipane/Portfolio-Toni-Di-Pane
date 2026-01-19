@@ -75,12 +75,15 @@ margin: 0;
 box-sizing: border-box;
 }
 
+html body {
+  overflow-x: hidden;
+}
+
 body {
 font-family: 'Larsseit', sans-serif;
 font-weight: 400;
 background-color: #fafafa;
 margin: 0px;
-overflow-x: hidden;
 }
 
 #cursor {
@@ -554,6 +557,14 @@ font-size: min(4.5vw, 90px);
 margin-top: 6vw;
 }
 
+.Ui {
+  margin: 8vw auto;
+  display: block;
+  width: min(80vw, 1500px);
+  height: auto;
+}
+
+
 
 
 
@@ -614,7 +625,7 @@ font-weight: 300;
 .imglandingpage {
 display: block;
 width: 87vw;
-margin-top: 1vw;
+margin-top: 5vw;
 }
 
 .logos:before,
@@ -628,8 +639,13 @@ z-index: 2;
 }
 
 .logos-slide img{
-margin: 0vw 3vw;
+margin: 15vw 3vw;
 height: 6vw;
+}
+
+.colonnes {
+margin-top: 15vw;
+display: flex;
 }
 
 .SmallTitle {
