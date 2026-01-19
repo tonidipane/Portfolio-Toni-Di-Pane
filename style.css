@@ -123,9 +123,17 @@ padding: 20px 20px 20px 20px;
 height: 80px;
 }
 
+.menu {
+font-family: 'Larsseit', sans-serif;
+font-weight: 300;
+display: flex;
+position: absolute;
+right: 0;
+align-items: center;
+}
+
 .logo{
 margin-top: 2px;
-
 }
 
 .logo img {
@@ -187,6 +195,26 @@ transition: background-color 0.45s ease;
 background-color: #711ff5;
 color: #fff;
 cursor: none;
+}
+
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: none;
+  position: absolute;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+.burger span {
+  display: block;
+  height: 2px;
+  width: 24px;
+  background: #000;
+  margin: 6px auto;
+  transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
 .InnerPadding {
@@ -572,17 +600,17 @@ margin-top: 6vw;
 }
 
 .projet {
-  gap: 2vw;
-  padding-top: 4vw;
-  border-radius: 2vw;
-  filter: drop-shadow(10px 10px 50px rgba(153, 153, 153, 0.082));
-  margin: 8vw auto;
-  width: 80vw;
-  height: 37vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #ffffff;
+gap: 2vw;
+padding-top: 4vw;
+border-radius: 2vw;
+filter: drop-shadow(10px 10px 50px rgba(153, 153, 153, 0.082));
+margin: 8vw auto;
+width: 80vw;
+height: 37vw;
+display: flex;
+flex-direction: column;
+justify-content: center;
+background-color: #ffffff;
 }
 
 .projettitle {
@@ -614,21 +642,21 @@ width: 80vw;
 }
 
 .footer {
-  margin-top: 7vw;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70vw;
-  display: flex;
-  gap: 10vw;
-  margin-bottom: 7vw;
+margin-top: 7vw;
+margin-left: auto;
+margin-right: auto;
+width: 70vw;
+display: flex;
+gap: 10vw;
+margin-bottom: 7vw;
 }
 
 .footer1 {
-  width: 10vw;
+width: 10vw;
 }
 
 .logofooter {
-  width: 5vw;
+width: 5vw;
 }
 
 .footer2 {
@@ -711,6 +739,56 @@ width: 80vw;
 
   .colonne3 {
     display: none;
+  }
+  
+.menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background: #fafafa;
+    padding: 50px 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid rgba(0,0,0,0.06);
+  }
+
+
+  .burger {
+    display: block;
+  }
+
+  .menu.open {
+    display: flex;
+    text-align: center;
+  }
+
+
+  .accueil, .nav-links, .contact-btn {
+    font-size: 4vw;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  .contact-btn li a {
+  border: 0px solid #711ff5;
+  text-decoration: none;
+  color: #929292;
+  transition: background-color 0.45s ease;
+  }
+
+  .contact-btn li a {
+    margin-right: 0;
+  }
+
+
+  .nav-links {
+    justify-content: flex-start;
+    gap: 28px;
   }
 
 .title {
