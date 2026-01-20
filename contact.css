@@ -167,7 +167,13 @@ transition: color 0.3s ease;
 .accueil li a {
 text-decoration: none;
 color: #929292;
+transition: color 0.3s ease;
 }
+
+.accueil li a:hover {
+color: #000;
+}
+
 
 .nav-links li a:hover {
 color: #000;
@@ -211,6 +217,24 @@ color: #ffffff;
   background: #000;
   margin: 6px auto;
   transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.burger span:nth-child(2) {
+  transform-origin: left;
+}
+
+.burger.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.burger.active span:nth-child(2) {
+  transform: scaleX(0);
+  transform-origin: left;
+  opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 .InnerPadding {
@@ -405,7 +429,7 @@ width: 5vw;
 
 .FooterTitle {
   font-weight: 500;
-  font-size: 1.5vw;
+  font-size: min(1.5vw, 25px);
   margin-bottom: 1.4vw;
 }
 
@@ -421,7 +445,7 @@ width: 5vw;
 }
 
 .footerlink li a {
-  font-size: 1vw;
+  font-size: min(1vw,18px);
   text-decoration: none;
   list-style: none;
   color: #000;
@@ -433,7 +457,7 @@ width: 5vw;
 }
 
 .footerlink li {
-  font-size: 1vw;
+  font-size: min(1vw,18px);
   color: #000;
 }
 
@@ -445,11 +469,11 @@ width: 5vw;
 
 .reseauximg li a img{
   margin-right: .7vw;
-  width: 1.4vw;
+  width: min(1.2vw,28px);
 }
 
 .tiktok{
-  width: 1.3vw !important;
+  width: min(1.1vw,25px) !important;
 }
 
 
@@ -554,21 +578,18 @@ max-width: 70vw;
 
 .footer {
   margin-top: 7vw;
-  margin-left: auto;
-  margin-right: auto;
   width: 70vw;
   display: flex;
-  gap: 10vw;
 }
 
 .footer1 {
-  width: 10vw;
+  width: 0vw;
   display: flex;
   align-items: center;
 }
 
 .logofooter {
-  width: 20vw;
+  width: 0vw;
 }
 
 .footer2 {
@@ -576,7 +597,8 @@ max-width: 70vw;
   display: flex;
   flex-direction: column;
   gap: 6vw;
-  margin-left: 10vw;
+  align-items: center;
+  text-align: center;
 }
 
 .projets {
@@ -594,13 +616,12 @@ max-width: 70vw;
 .FooterTitle {
   font-weight: 500;
   font-size: 6vw;
-  margin-bottom: 5vw;
 }
 
 .footerlink {
   display: flex;
   flex-direction: column;
-  gap: 3vw;
+  gap: 2vw;
   text-decoration: none;
   list-style: none;
   font-family: 'Larsseit', sans-serif;
@@ -626,7 +647,7 @@ max-width: 70vw;
 }
 
 .reseauximg {
-  padding: 0px;
+  justify-content: center;
   margin-top: 1vw;
   display: flex;
 }
